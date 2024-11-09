@@ -67,11 +67,8 @@ int main ()
 
     // Sort by name first
     sort(movies.begin(), movies.end(), CmpMovName);
-    stable_sort(movies.begin(), movies.end(), CmpMovRat);
-
     // Stable sort by rating
-
-    printVector(movies);
+    stable_sort(movies.begin(), movies.end(), CmpMovRat);
 
     int curMovie = 0;   // Index
     int curMovTimeLeft = movies[curMovie].getLength();
@@ -97,7 +94,7 @@ int main ()
         else if (i + 9 == 24)
             curTime == 24;
 
-        cout << curTime << " " << timeEnd << endl;
+        cout << " " << curTime << timeEnd << endl;
     }
 
 
