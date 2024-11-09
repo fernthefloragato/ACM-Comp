@@ -79,10 +79,13 @@ int main ()
     {
         cout << movies[curMovie].getName();
         curMovTimeLeft -= 60;
+        cout << "Current Time Left: " << curMovTimeLeft << endl;
 
         if (curMovTimeLeft <= 0)
             curMovTimeLeft = movies[++curMovie].getLength() - curMovTimeLeft;
         
+        cout << "Current Time After Update or no update: " << curMovTimeLeft << endl;
+
         if (i + 9 > 11 && i + 9 < 24)
             timeEnd = "pm";
         else 
