@@ -67,16 +67,35 @@ int main ()
 
     // Sort by name first
     sort(movies.begin(), movies.end(), CmpMovName);
+    stable_sort(movies.begin(), movies.end(), CmpMovRat);
 
     // Stable sort by rating
 
     printVector(movies);
 
-    int curTimeLeft = 900;
-    for (const auto& i : movies)
-    {
+    int curMovie = 0;   // Index
+    int curMovTimeLeft = movies[curMovie].getLength();
+    string timeEnd = "am";
+    int curTime;
 
+    for (int i = 0; i < 15; i++)
+    {
+        cout << movies[curMovie].getName();
+        curMovTimeLeft -= 60;
+
+        if (curMovTimeLeft <= 0)
+            curMovTimeLeft = movies[++curMovie].getLength();
+        
+        if (i + 9 > 12)
+            timeEnd = "pm";
+            if (i + 9 == 24)
+                timeEnd == "am";
+            
+        curTime = (i + 9) % 12;
+
+        cout << curTime << timeEnd << endl;
     }
+
 
 
 
