@@ -77,7 +77,10 @@ int main ()
 
     for (int i = 0; i < 16; i++)
     {
-        cout << movies[curMovie].getName();
+        if (i == 15)
+            cout << movies.back().getName();
+        else
+            cout << movies[curMovie].getName();
         curMovTimeLeft -= 60;
 
         if (curMovTimeLeft <= 0)
