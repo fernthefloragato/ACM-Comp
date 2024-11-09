@@ -83,6 +83,8 @@ int main ()
         if (curMovTimeLeft <= 0)
             curMovTimeLeft = movies[++curMovie].getLength();
         
+        cout << "I: " << i << endl;
+
         if (i + 9 == 24)
                 timeEnd == "am";
         else if (i + 9 > 11)
