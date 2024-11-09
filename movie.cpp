@@ -91,7 +91,7 @@ int main ()
         curTime = (i + 9) % 12;
         if (i + 9 == 12)
             curTime = 12;
-        else if (i + 9 == 24)
+        else if (i + 9 == 25)
             curTime == 24;
 
         cout << " " << curTime << timeEnd << endl;
