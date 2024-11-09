@@ -1,5 +1,6 @@
-C 2 33
-B 3 33
-A 4 33
-Rick-And-Morty 2.5 420
-Scream 4 480
+Evil-Dead 5 140
+Midsommar 4.2 120
+Us 3.6 160
+The-Omen 2 170
+Jeepers-Creepers 3.6 160
+NIghtmare-On-Elm-Street 4 150
