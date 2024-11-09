@@ -78,7 +78,7 @@ int main ()
     string timeEnd = "am";
     int curTime;
 
-    for (int i = 0; i < 15; i++)
+    for (int i = 0; i < 16; i++)
     {
         cout << movies[curMovie].getName();
         curMovTimeLeft -= 60;
