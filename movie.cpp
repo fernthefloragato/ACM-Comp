@@ -28,9 +28,9 @@ class Movie
         }
     private:
         Movie();
-        const string name;
-        const float rating;
-        const int length;
+        string name;
+        float rating;
+        int length;
 };
 
 void printVector(const vector<Movie>& mov)
@@ -71,6 +71,12 @@ int main ()
     // Stable sort by rating
 
     printVector(movies);
+
+    int curTimeLeft = 900;
+    for (const auto& i : movies)
+    {
+
+    }
 
 
 
