@@ -82,7 +82,7 @@ int main ()
         cout << "Current Time Left: " << curMovTimeLeft << endl;
 
         if (curMovTimeLeft <= 0)
-            curMovTimeLeft = movies[++curMovie].getLength() - curMovTimeLeft;
+            curMovTimeLeft = movies[++curMovie].getLength() + curMovTimeLeft;
         
         cout << "Current Time After Update or no update: " << curMovTimeLeft << endl;
 
