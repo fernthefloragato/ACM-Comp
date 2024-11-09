@@ -87,7 +87,7 @@ int main ()
         if (i + 9 > 11 && i + 9 < 24)
             timeEnd = "pm";
         else 
-            timeEnd == "am";
+            timeEnd = "am";
             
         curTime = (i + 9) % 12;
         if (i + 9 == 24)
