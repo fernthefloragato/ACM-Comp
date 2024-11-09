@@ -66,7 +66,7 @@ int main ()
         movies.push_back(Movie(curName, curRat, curLen));
 
     // Sort by name first
-  ///  sort(movies.begin(), movies.end(), CmpMovRat);
+    //sort(movies.begin(), movies.end(), CmpMovRat);
 
     // Stable sort by rating
 
