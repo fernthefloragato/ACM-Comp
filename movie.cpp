@@ -84,8 +84,8 @@ int main ()
             curMovTimeLeft = movies[++curMovie].getLength();
 
         if (i + 9 == 24)
-                timeEnd == "am";
-        else if (i + 9 > 11)
+            timeEnd == "am";
+        else if (i + 9 > 11 && i + 9 < 24)
             timeEnd = "pm";
             
         curTime = (i + 9) % 12;
